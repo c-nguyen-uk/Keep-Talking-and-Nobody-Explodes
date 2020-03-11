@@ -11,20 +11,20 @@ can be attempted. Otherwise, more correct morse code will need to be appended.
 
 # Creating dictionaries of the possible morse code, words and frequencies.
 
-morse_to_words = {".........-...-..":"shell", ".....-.-...-.....":"halls",
-                "....-....-.-.-.-":"slick", "-.-...-.-.-.-":"trick",
-                "-...----..-....":"boxes", ".-....--.-...":"leaks",
-                "...-.-.----....":"strobe", "-........-.-.---":"bistro",
-                "..-..-....-.-.-.-":"flick","-...------......":"bombs",
-                "-....-...--.-":"break", "-....-...-.-.-.-":"brick",
-                "...-..--.-":"steak", "...-..-.--.":"sting",
-                "...-.-.-.----.-.":"vector", "-.....--...":"beats"}
-words_to_freqs = {"shell":"3.505", "halls":"3.515", "slick":"3.522",
-                 "trick":"3.532", "boxes":"3.535", "leaks":"3.542",
-                 "strobe":"3.545", "bistro":"3.552", "flick":"3.555",
-                 "bombs":"3.565", "break":"3.572", "brick":"3.575",
-                 "steak":"3.582", "sting":"3.592", "vector":"3.595",
-                 "beats":"3.600"}
+morse_to_words = {".........-...-..": "shell", ".....-.-...-.....": "halls",
+                "....-....-.-.-.-": "slick", "-.-...-.-.-.-": "trick",
+                "-...----..-....": "boxes", ".-....--.-...": "leaks",
+                "...-.-.----....": "strobe", "-........-.-.---": "bistro",
+                "..-..-....-.-.-.-": "flick","-...------......": "bombs",
+                "-....-...--.-": "break", "-....-...-.-.-.-": "brick",
+                "...-..--.-": "steak", "...-..-.--.": "sting",
+                "...-.-.-.----.-.": "vector", "-.....--...": "beats"}
+words_to_freqs = {"shell": "3.505", "halls": "3.515", "slick": "3.522",
+                 "trick": "3.532", "boxes": "3.535", "leaks": "3.542",
+                 "strobe": "3.545", "bistro": "3.552", "flick": "3.555",
+                 "bombs": "3.565", "break": "3.572", "brick": "3.575",
+                 "steak": "3.582", "sting": "3.592", "vector": "3.595",
+                 "beats": "3.600"}
 
 # This function returns possible frequencies corresponding to the morse code.
 
