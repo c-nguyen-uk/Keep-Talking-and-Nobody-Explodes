@@ -2,14 +2,16 @@
 """
 This programme solves the Morse Code module.
 
-It is important that we allow for input forgiveness since the defuser is
-likely to misread the morse code. Hence we only reqiure that the initial part
-of the morse code needs to be fully correct. The programme will then suggest
-possible correct frequencies. If enough lives are available, then all of them
-can be attempted. Otherwise, more correct morse code will need to be appended.
+It is important that we allow for input forgiveness since the defuser
+is likely to misread the morse code. Hence we only reqiure that the
+initial part of the morse code needs to be fully correct. The programme
+will then suggest possible correct frequencies. If enough lives are
+available, then all of them can be attempted. Otherwise, more correct
+morse code will need to be appended.
 """
 
-# Creating dictionaries of the possible morse code, words and frequencies.
+# Creating dictionaries of all possible morse code, words and
+# frequencies which could appear.
 
 morse_to_words = {".........-...-..": "shell", ".....-.-...-.....": "halls",
                 "....-....-.-.-.-": "slick", "-.-...-.-.-.-": "trick",
@@ -26,7 +28,8 @@ words_to_freqs = {"shell": "3.505", "halls": "3.515", "slick": "3.522",
                  "steak": "3.582", "sting": "3.592", "vector": "3.595",
                  "beats": "3.600"}
 
-# This function returns possible frequencies corresponding to the morse code.
+# This function returns possible the frequencies corresponding to the
+# morse code.
 
 def morse_code(morse):
     freqs_list = []
