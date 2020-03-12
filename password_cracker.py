@@ -2,9 +2,11 @@
 """
 This programme solves the Password Cracker module.
 
-We do not discriminate between letter capitalisation or input - as long as
-there is a comma between them. There is also some input forgiveness - if no
-password can be found, then retrying is possible.
+We do not discriminate between letter capitalisation or input - as long
+as there is a comma between them. 
+
+There is also some input forgiveness - if no password can be found,
+then retrying is possible.
 """
 
 # We create a list of all possible passwords.
@@ -15,9 +17,9 @@ passwords = ["ABOUT", "AFTER", "AGAIN", "BELOW", "COULD", "EVERY", "FIRST",
              "STILL", "STUDY", "THEIR", "THERE", "THESE", "THING", "THINK",
              "THREE", "WATER", "WHERE", "WHICH", "WORLD", "WOULD", "WRITE"]
 
-# This simple function checks for a password from any possible combinations of
-# letters. Despite being O(n^5), it runs quickly since n = 6 in this module.
-# Note that in this module answers are unique.
+# This simple function checks for a password from any possible
+# combinations of letters. Despite being O(n^5), it runs quickly since
+# n = 6 in this module. Note that in this module answers are unique.
 
 def password_cracker(L1, L2, L3, L4, L5):
     for i1 in L1:
