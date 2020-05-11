@@ -45,5 +45,5 @@ def morse_code(morse):
 # We now ask for morse code.
 
 while True:
-    morse = str(input("Dots and dashes without spaces:"))
+    morse = str(input("Dots and dashes without spaces: "))
     input(morse_code(morse) + "\n \nPress Enter to retry.")
