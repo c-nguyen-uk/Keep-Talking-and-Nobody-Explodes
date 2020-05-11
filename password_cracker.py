@@ -28,11 +28,10 @@ def password_cracker(L1, L2, L3, L4, L5):
                 for i4 in L4:
                     for i5 in L5:
                         if i1 + i2 + i3 + i4 + i5 in passwords:
-                            return ("The password is: "
-                                    + i1 + i2 + i3 + i4 + i5)
+                            return (i1 + i2 + i3 + i4 + i5)
 
 # We now ask for the sets of letters.
- 
+
 while True:
     L1 = list(input("First letters, separated by a comma: ").upper())
     L2 = list(input("Second letters, separated by a comma: ").upper())
@@ -46,4 +45,5 @@ while True:
         L3 = list(input("Third letters, separated by a comma: ").upper())
         L4 = list(input("Fourth letters, separated by a comma: ").upper())
         L5 = list(input("Fifth letters, separated by a comma: ").upper())
-    input(password_cracker(L1, L2, L3, L4, L5) + "\n \nPress Enter to retry.")
+    input("The password is: " + password_cracker(L1, L2, L3, L4, L5)
+          + "\n \nPress Enter to retry.")
