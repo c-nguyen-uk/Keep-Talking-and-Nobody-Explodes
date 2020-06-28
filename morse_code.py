@@ -10,8 +10,7 @@ available, then all of them can be attempted. Otherwise, more correct
 morse code will need to be appended.
 """
 
-# Creating dictionaries of all possible morse code, words and
-# frequencies which could appear.
+# Dictionaries of all possible morse code, words and frequencies.
 
 morse_to_words = {".........-...-..": "shell", ".....-.-...-.....": "halls",
                 "....-....-.-.-.-": "slick", "-.-...-.-.-.-": "trick",
@@ -42,7 +41,7 @@ def morse_code(morse):
        return "The morse code is wrong." 
     return "The frequency could be: {f} MHz.".format(f=", ".join(freqs_list))
 
-# We now ask for morse code.
+# Asks user for morse code.
 
 while True:
     morse = str(input("Dots and dashes without spaces: "))
