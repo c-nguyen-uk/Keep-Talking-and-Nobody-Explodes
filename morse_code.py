@@ -41,7 +41,7 @@ def morse_code(morse):
        return "The morse code is wrong." 
     return "The frequency could be: {f} MHz.".format(f=", ".join(freqs_list))
 
-# Asks user for morse code.
+# Asks the user for morse code.
 
 while True:
     morse = str(input("Dots and dashes without spaces: "))
