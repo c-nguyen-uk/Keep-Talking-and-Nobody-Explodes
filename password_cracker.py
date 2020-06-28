@@ -30,7 +30,7 @@ def password_cracker(L1, L2, L3, L4, L5):
                         if i1 + i2 + i3 + i4 + i5 in passwords:
                             return (i1 + i2 + i3 + i4 + i5)
 
-# Asks user for the sets of letters.
+# Asks the user for the sets of letters.
 
 while True:
     L1 = list(input("First letters, separated by a comma: ").upper())
