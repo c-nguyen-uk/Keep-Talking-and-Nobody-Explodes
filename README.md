@@ -8,10 +8,13 @@ This toolkit is designed to assist the bomb experts with the defusal of certain 
 
 ## Creating Standalone Executables
 
-All of the provided `.py` files can be run in the IDE but [PyInstaller](http://www.pyinstaller.org/) can be used to create standalone executables based on the OS that PyInstaller is run on. First, ensure that PyInstaller is installed:
+All of the provided `.py` files in the `src` folder can be run in the IDE but [PyInstaller](http://www.pyinstaller.org/) can be used to create standalone executables based on the OS that PyInstaller is run on. For example, the executables in the `build` folder will only run on Windows.
+
+First, ensure that PyInstaller is installed:
 ```
 pip install pyinstaller
 ```
+
 To create a standalone executable we can use the following steps (which assume the use of Anaconda, but obvious modifications can be made for other distributions):
 
 1. In the Anaconda Prompt, navigate to the directory containing the `.py` file.
