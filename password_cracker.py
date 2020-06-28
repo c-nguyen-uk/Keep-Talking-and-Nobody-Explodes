@@ -9,7 +9,7 @@ There is also some input forgiveness - if no password can be found,
 then retrying is possible.
 """
 
-# We create a list of all possible passwords.
+# A list of all possible passwords.
 
 passwords = ["ABOUT", "AFTER", "AGAIN", "BELOW", "COULD", "EVERY", "FIRST",
              "FOUND", "GREAT", "HOUSE", "LARGE", "LEARN", "NEVER", "OTHER",
@@ -30,7 +30,7 @@ def password_cracker(L1, L2, L3, L4, L5):
                         if i1 + i2 + i3 + i4 + i5 in passwords:
                             return (i1 + i2 + i3 + i4 + i5)
 
-# We now ask for the sets of letters.
+# Asks user for the sets of letters.
 
 while True:
     L1 = list(input("First letters, separated by a comma: ").upper())
