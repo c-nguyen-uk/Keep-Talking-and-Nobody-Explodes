@@ -13,7 +13,7 @@ point, to save on time, make questioning more efficient, and save
 working memory.
 """
 
-# We define all possible external properties of the bomb.
+# Defines all possible external properties of the bomb.
 
 lights_state = ["YES", "NO"]
 colours = ["WHITE", "RED", "RED WHITE", "WHITE RED", "BLUE", "BLUE WHITE",
@@ -21,7 +21,7 @@ colours = ["WHITE", "RED", "RED WHITE", "WHITE RED", "BLUE", "BLUE WHITE",
 star_existence = ["YES", "NO"]
 max_batteries_possible = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-# Creating the consistent external properties of the bomb.
+# Creates the consistent external properties of the bomb.
 
 batteries = input("How many batteries are there? ")
 while not(batteries in max_batteries_possible):
@@ -104,7 +104,7 @@ def complicated_wires(lights, colour, star,
     else:
         return "Do not cut the wire."
 
-# We now ask for properties of the complicated wire.
+# Asks the user for properties of the complicated wire.
 
 while True:
     lights = input("Is the light on? ").upper()
