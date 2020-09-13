@@ -13,16 +13,14 @@ point, to save on time, make questioning more efficient, and save
 working memory.
 """
 
-# Defines all possible external properties of the bomb.
-
+# These lists define all possible external properties of the bomb.
 lights_state = ["YES", "NO"]
 colours = ["WHITE", "RED", "RED WHITE", "WHITE RED", "BLUE", "BLUE WHITE",
            "WHITE BLUE", "RED BLUE", "BLUE RED"]
 star_existence = ["YES", "NO"]
 max_batteries_possible = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-# Creates the consistent external properties of the bomb.
-
+# These inputs create the consistent external properties of the bomb.
 batteries = input("How many batteries are there? ")
 while not(batteries in max_batteries_possible):
     batteries = input("""That is not a valid number of batteries. 
@@ -37,14 +35,12 @@ while not(is_serial_even == "YES" or is_serial_even == "NO"):
 serial even?\" is yes or no. Please try again: """.replace("\n", "")).upper()
 
 # This function contains all possible scenarios for a complicated wire.
-    
 def complicated_wires(lights, colour, star,
                       batteries = int(batteries),
                       parallel_port = parallel_port,
                       is_serial_even = is_serial_even):
 
-    # All light off and no star scenarios.
-
+    # These are all of the light off and no star scenarios.
     if (lights == "NO" and colour == "WHITE" and star == "NO"):
         return "Cut the wire."
     if (lights == "NO" and (colour == "RED"
@@ -58,8 +54,7 @@ def complicated_wires(lights, colour, star,
         and star == "NO" and is_serial_even == "YES"):
         return "Cut the wire."
 
-    # All light off and star scenarios.
-    
+    # These are all of the light off and star scenarios.
     if (lights == "NO" and (colour == "WHITE"
                             or colour == "RED"
                             or colour == "RED WHITE"
@@ -71,8 +66,7 @@ def complicated_wires(lights, colour, star,
         and star == "YES" and parallel_port == "YES"):
         return "Cut the wire."
 
-    # All light on and no star scenarios.
-
+    # These are all of the light on and no star scenarios.
     if (lights == "YES" and (colour == "RED"
                              or colour == "RED WHITE"
                              or colour == "WHITE RED")
@@ -88,8 +82,7 @@ def complicated_wires(lights, colour, star,
         and star == "NO" and is_serial_even == "YES"):
         return "Cut the wire."
 
-    # All light on and star scenarios.
-
+    # These are all of the light on and star scenarios.
     if (lights == "YES" and (colour == "WHITE"
                              or colour == "RED"
                              or colour == "RED WHITE"
@@ -104,8 +97,8 @@ def complicated_wires(lights, colour, star,
     else:
         return "Do not cut the wire."
 
-# Asks the user for properties of the complicated wire.
-
+# This forgiving section asks the user for the properties of the
+# complicated wire.
 while True:
     lights = input("Is the light on? ").upper()
     while not(lights in lights_state):
