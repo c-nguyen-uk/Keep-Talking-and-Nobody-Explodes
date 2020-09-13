@@ -9,8 +9,7 @@ There is also some input forgiveness - if no password can be found,
 then retrying is possible.
 """
 
-# A list of all possible passwords.
-
+# This list contains all possible passwords.
 passwords = ["ABOUT", "AFTER", "AGAIN", "BELOW", "COULD", "EVERY", "FIRST",
              "FOUND", "GREAT", "HOUSE", "LARGE", "LEARN", "NEVER", "OTHER",
              "PLACE", "PLANT", "POINT", "RIGHT", "SMALL", "SOUND", "SPELL",
@@ -18,9 +17,8 @@ passwords = ["ABOUT", "AFTER", "AGAIN", "BELOW", "COULD", "EVERY", "FIRST",
              "THREE", "WATER", "WHERE", "WHICH", "WORLD", "WOULD", "WRITE"]
 
 # This simple function checks for a password from any possible
-# combinations of letters. Despite being O(n^5), it runs quickly since
-# n = 6 in this module. Note that in this module answers are unique.
-
+# combinations of letters.  Despite being O(n^5), it runs quickly since
+# n = 6 in this module.  Note that in this module answers are unique.
 def password_cracker(L1, L2, L3, L4, L5):
     for i1 in L1:
         for i2 in L2:
@@ -30,8 +28,7 @@ def password_cracker(L1, L2, L3, L4, L5):
                         if i1 + i2 + i3 + i4 + i5 in passwords:
                             return (i1 + i2 + i3 + i4 + i5)
 
-# Asks the user for the sets of letters.
-
+# This forgiving section asks the user for the sets of letters.
 while True:
     L1 = list(input("First letters, separated by a comma: ").upper())
     L2 = list(input("Second letters, separated by a comma: ").upper())
