@@ -2,7 +2,7 @@
 """
 This programme solves the Complicated Wires module.
 
-We alllow for a lot of input forgiveness to ensure that erroroneous
+We allow for a lot of input forgiveness to ensure that erroneous
 inputs entered under stress do not crash the programme and cause more
 time to be wasted. We also do not discriminate between capitalisation
 or wire colour ordering.
