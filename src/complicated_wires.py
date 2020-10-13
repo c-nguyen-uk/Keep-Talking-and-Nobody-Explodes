@@ -4,7 +4,7 @@ This programme solves the Complicated Wires module.
 
 We allow for a lot of input forgiveness to ensure that erroneous
 inputs entered under stress do not crash the programme and cause more
-time to be wasted. We also do not discriminate between capitalisation
+time to be wasted.  We also do not discriminate between capitalisation
 or wire colour ordering.
 
 We also modify the progression of the manual - we first ask for all
