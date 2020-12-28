@@ -22,5 +22,5 @@ To create a standalone executable we can use the following steps (which assume t
 
 1. In the Anaconda Prompt, navigate to the directory containing the `.py` file.
 2. `pyinstaller.exe --onefile filename.py`
-3. Find the executable in the dist directory.
+3. Find the executable in the `dist` directory.
 4. To clean up, delete everything but the produced executable.
